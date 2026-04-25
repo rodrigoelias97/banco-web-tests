@@ -12,7 +12,7 @@ describe('Transferencias', () => {
         cy.verificarMensagemNoToast('Transferência realizada!')
     })
 
-    it.only('Deve apresentar erro quando tentar transferir mais que 5 mil sem o token', () => {
+    it('Deve apresentar erro quando tentar transferir mais que 5 mil sem o token', () => {
         //Act
         cy.realizarTransferencia('Ana Pereira', 'Carlos Souza', '6000')
 
